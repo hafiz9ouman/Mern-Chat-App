@@ -23,6 +23,7 @@ const protectRoute = async (req, res, next) => {
         }
 
         req.user = user;
+        
         console.log("Protected Middleware Passed")
         next();
      } catch (error) {
